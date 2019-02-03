@@ -1,0 +1,49 @@
+{
+  "name": "admin-with-keystonejs",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Admin UI created with keystonejs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ductienas/admin-with-keystonejs.git"
+  },
+  "author": "Trần Đức Tiến <ductienas@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "web",
+    "app",
+    "cms",
+    "admin",
+    "framework",
+    "mongoose",
+    "gui",
+    "site",
+    "website",
+    "forms"
+  ],
+  "dependencies": {
+    "async": "^2.6.1",
+    "dotenv": "^6.2.0",
+    "keystone": "^4.0.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.13.0",
+    "eslint-config-keystone": "^3.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "KEYSTONE_PREBUILD_ADMIN=true nodemon keystone.js --exec babel-node",
+    "prod": "NODE_ENV=production KEYSTONE_PREBUILD_ADMIN=true babel-node keystone.js",
+    "prod:pm2": "NODE_ENV=production KEYSTONE_PREBUILD_ADMIN=true pm2 start keystone.js --name admin-name --interpreter babel-node"
+  }
+}
