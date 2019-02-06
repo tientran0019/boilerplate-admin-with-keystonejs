@@ -27,4 +27,4 @@ See the [KeystoneJS documentation ](http://keystonejs.com) for details and examp
 4. Run ``yarn prod`` or ``yarn prod:pm2`` for production server
 
 # Contributions
-Trần Đức Tiến <ductienas@gmail.com>
+Trần Đức Tiến <tientran0019@gmail.com>
