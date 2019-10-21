@@ -6,7 +6,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tientran0019/admin-with-keystonejs.git"
+    "url": "https://github.com/tientran0019/boilerplate-admin-with-keystonejs.git"
   },
   "author": "Trần Đức Tiến <tientran0019@gmail.com>",
   "license": "MIT",
